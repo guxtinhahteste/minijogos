@@ -29,14 +29,25 @@ nav ul {
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 nav ul li a {
-    color: #2575fc;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    background-color: #2575fc;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 a.voltar {
