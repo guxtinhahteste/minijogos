@@ -1,94 +1,63 @@
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    text-align: center;
+    background-color: #ffffff;
     color: #333;
+    text-align: center;
 }
 
 header {
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
-    color: white;
-    padding: 40px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-top: 0;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
     background-color: #2575fc;
-    border-radius: 20px;
-    transition: background-color 0.3s;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
 
-nav ul li a:hover {
-    background-color: #6a11cb;
+h1 {
+    margin: 0;
 }
 
 main {
     padding: 20px;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-section:hover {
-    transform: scale(1.05);
+nav ul li {
+    margin: 10px 0;
 }
 
-button {
-    background-color: #6a11cb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+nav ul li a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
-button:hover {
+a.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #ffffff;
     background-color: #2575fc;
-    transform: scale(1.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+a.voltar:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    background-color: #333;
+    background-color: #2575fc;
     color: white;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     width: 100%;
     bottom: 0;
-    text-align: center;
 }
