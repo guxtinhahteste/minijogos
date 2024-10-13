@@ -8,10 +8,13 @@ function adivinheNumero() {
 
     if (palpite == numeroSecreto) {
         resultado.innerText = 'Parabéns! Você acertou!';
+        resultado.style.color = 'green';
     } else if (palpite < numeroSecreto) {
         resultado.innerText = 'Tente um número maior!';
+        resultado.style.color = 'blue';
     } else {
         resultado.innerText = 'Tente um número menor!';
+        resultado.style.color = 'red';
     }
 }
 
@@ -29,6 +32,7 @@ function clicarAlvo() {
         const tempoFim = new Date().getTime();
         const tempoTotal = (tempoFim - tempoInicio) / 1000;
         resultado.innerText = 'Você clicou em ' + tempoTotal + ' segundos!';
+        resultado.style.color = 'purple';
         alvo.innerText = 'Clique Aqui!';
         tempoInicio = null;
     }
