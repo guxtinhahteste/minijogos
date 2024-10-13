@@ -1,6 +1,6 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -9,14 +9,16 @@ body {
 }
 
 header {
-    background-color: #2575fc;
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
     color: white;
     padding: 20px 0;
     margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+header h1 {
     margin: 0;
+    font-size: 2.5em;
 }
 
 main {
@@ -26,10 +28,13 @@ main {
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 nav ul li a {
@@ -71,4 +76,10 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+#date-time {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #666;
 }

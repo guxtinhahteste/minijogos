@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Cálculo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Desafio de Cálculo</h1>
+    </header>
+    <main>
+        <section>
+            <p>Resolva o cálculo o mais rápido possível!</p>
+            <p>Quanto é 5 + 3?</p>
+            <input type="number" id="resposta-calculo" placeholder="Digite sua resposta">
+            <button onclick="verificarCalculo()">Enviar</button>
+            <p id="resultado-calculo"></p>
+        </section>
+        <a href="index.html" class="voltar">Voltar para a página inicial</a>
+    </main>
+    <footer>
+        <p>© 2024 Mini Jogos Interativos</p>
+    </footer>
+
+    <script>
+        function verificarCalculo() {
+            const resposta = document.getElementById('resposta-calculo').value;
+            const resultado = document.getElementById('resultado-calculo');
+            if (resposta == 8) {
+                resultado.innerText = 'Correto!';
+                resultado.style.color = 'green';
+            } else {
+                resultado.innerText = 'Errado. Tente novamente!';
+                resultado.style.color = 'red';
+            }
+        }
+    </script>
+</body>
+</html>

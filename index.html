@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1>Bem-vindo ao Site de Mini Jogos</h1>
+        <div id="date-time"></div>
     </header>
     <main>
         <section>
@@ -18,7 +19,9 @@
                 <ul>
                     <li><a href="adivinhe.html">Adivinhe o Número</a></li>
                     <li><a href="clica.html">Clica no Alvo</a></li>
-                    <li><a href="jogo-da-memoria.html">Jogo da Memória (em breve)</a></li>
+                    <li><a href="jogo-da-memoria.html">Jogo da Memória</a></li>
+                    <li><a href="quiz.html">Quiz Rápido</a></li>
+                    <li><a href="calculo.html">Desafio de Cálculo</a></li>
                 </ul>
             </nav>
         </section>
@@ -26,5 +29,16 @@
     <footer>
         <p>© 2024 Mini Jogos Interativos</p>
     </footer>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const formattedDate = now.toLocaleDateString('pt-BR', options);
+            const formattedTime = now.toLocaleTimeString('pt-BR');
+            document.getElementById('date-time').innerText = formattedDate + ' ' + formattedTime;
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
 </body>
 </html>
