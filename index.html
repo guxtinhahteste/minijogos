@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Jogos Interativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao site de Mini Jogos!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#adivinhe-numero">Adivinhe o Número</a></li>
+            <li><a href="#clica-alvo">Clica no Alvo</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="adivinhe-numero">
+            <h2>Adivinhe o Número</h2>
+            <p>Tente adivinhar o número entre 1 e 100!</p>
+            <input type="number" id="numero-entrada" placeholder="Seu palpite">
+            <button onclick="adivinheNumero()">Adivinhar</button>
+            <p id="resultado-adivinhacao"></p>
+        </section>
+
+        <section id="clica-alvo">
+            <h2>Clica no Alvo</h2>
+            <p>Clique no botão o mais rápido possível!</p>
+            <button id="alvo" onclick="clicarAlvo()">Clique Aqui!</button>
+            <p id="resultado-clique"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para aprendizado.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
